@@ -22,5 +22,19 @@ sudo docker build -t cuda1122 .
 - on the terminal, run a docker container in the background: 
 
 ```bash
-docker run -d --name cupy_test_1122 --runtime=nvidia  --gpus all cuda1122
+sudo docker run -d --name cupy_test_1122 -v /home/ruequera/git/cupy:/root/cupy  --runtime=nvidia  --gpus all cuda1122
 ```
+
+- open a bash shell inside a running container:
+
+```bash
+cupy/
+conda init
+source .bashrc 
+conda create -n cupy python=3.11
+conda activate cupy
+cd cupy/
+pip install -e .
+python test_script.py 
+```
+
