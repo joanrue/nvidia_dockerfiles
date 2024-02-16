@@ -8,6 +8,7 @@ RUN    apt update \
                                                  bash-completion \
                                                  build-essential \
                                                  ca-certificates \
+                                                 git \
                                                  clang \
                                                  python3 \
                                                  tmux \
