@@ -9,6 +9,7 @@ RUN    apt update \
                                                  build-essential \
                                                  ca-certificates \
                                                  git \
+                                                 ssh \
                                                  clang \
                                                  python3 \
                                                  tmux \
