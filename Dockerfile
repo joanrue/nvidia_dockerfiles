@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.2.2-devel-ubuntu20.04 #
+FROM nvidia/cuda:11.2.2-devel-ubuntu20.04
 SHELL ["/bin/bash", "-c"]
 
 ### Clean image with system tools
